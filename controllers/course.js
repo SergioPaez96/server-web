@@ -13,7 +13,7 @@ async function createCourse(req, res) {
     if (err) {
       res.status(400).send({ message: "Error al crear curso." });
     } else {
-      res.status(200).send(courseStored);
+      res.status(201).send(courseStored);
     }
   });
 }
